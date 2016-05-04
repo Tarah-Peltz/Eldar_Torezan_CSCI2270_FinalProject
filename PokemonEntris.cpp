@@ -661,6 +661,9 @@ void PokemonEntris::Compare()
         cout << Actual -> Name << " has " << Actual -> BaseTotal << " base power." << endl;
         cout << Actual2 -> Name << " has " << Actual2 -> BaseTotal << " base power." << endl;
         cout << Actual -> Name << " has the same amount of base power as " << Actual2 -> Name << "." << endl;
+        cout << endl;
+        cout << endl;
+        cout << "Please press enter to return to the previous menu." << endl;
     }
     //cin.get();
     while (cin.get() != '\n')
@@ -693,7 +696,7 @@ void PokemonEntris :: PokemonGeneralInformationMenu(string trainerName)
             SearchByHeight();
             break;
         case 2:
-            SearchByWeight();
+            SearchByWeight(); //I can't figure out why this won't run. It's calling it here and the function doesn't look any different than the others. 
             break;
         case 3:
             SearchByNNGeneral();
@@ -922,6 +925,9 @@ void PokemonEntris :: SearchHP()
         if (Actual->BaseSpDef <100)
             cout << " ";
         cout << "    SPD: " << Actual->BaseSpeed << endl;
+        cout << endl;
+        cout << endl;
+        cout << "Please press enter to return to the previous menu." << endl;
     }
 
     else if (LorH == "H")
@@ -975,6 +981,9 @@ void PokemonEntris :: SearchHP()
         if (Actual->BaseSpDef <100)
             cout << " ";
         cout << "    SPD: " << Actual->BaseSpeed << endl;
+        cout << endl;
+        cout << endl;
+        cout << "Please press enter to return to the previous menu." << endl;
     }
     cin.get();
     while (cin.get() != '\n')
@@ -1143,6 +1152,9 @@ void PokemonEntris :: SearchATK()
         if (Actual->BaseSpDef <100)
             cout << " ";
         cout << "    SPD: " << Actual->BaseSpeed << endl;
+        cout << endl;
+        cout << endl;
+        cout << "Please press enter to return to the previous menu." << endl;
     }
 
     else if (LorH == "H")
@@ -1196,6 +1208,9 @@ void PokemonEntris :: SearchATK()
         if (Actual->BaseSpDef <100)
             cout << " ";
         cout << "    SPD: " << Actual->BaseSpeed << endl;
+        cout << endl;
+        cout << endl;
+        cout << "Please press enter to return to the previous menu." << endl;
     }
     cin.get();
     while (cin.get() != '\n')
@@ -1364,6 +1379,9 @@ void PokemonEntris :: SearchDEF()
         if (Actual->BaseSpDef <100)
             cout << " ";
         cout << "    SPD: " << Actual->BaseSpeed << endl;
+        cout << endl;
+        cout << endl;
+        cout << "Please press enter to return to the previous menu." << endl;
     }
 
     else if (LorH == "H")
@@ -1417,6 +1435,9 @@ void PokemonEntris :: SearchDEF()
         if (Actual->BaseSpDef <100)
             cout << " ";
         cout << "    SPD: " << Actual->BaseSpeed << endl;
+        cout << endl;
+        cout << endl;
+        cout << "Please press enter to return to the previous menu." << endl;
     }
     cin.get();
     while (cin.get() != '\n')
@@ -1585,6 +1606,9 @@ void PokemonEntris :: SearchSpA()
         if (Actual->BaseSpDef <100)
             cout << " ";
         cout << "    SPD: " << Actual->BaseSpeed << endl;
+        cout << endl;
+        cout << endl;
+        cout << "Please press enter to return to the previous menu." << endl;
     }
 
     else if (LorH == "H")
@@ -1638,6 +1662,9 @@ void PokemonEntris :: SearchSpA()
         if (Actual->BaseSpDef <100)
             cout << " ";
         cout << "    SPD: " << Actual->BaseSpeed << endl;
+        cout << endl;
+        cout << endl;
+        cout << "Please press enter to return to the previous menu." << endl;
     }
     cin.get();
     while (cin.get() != '\n')
@@ -1806,6 +1833,9 @@ void PokemonEntris :: SearchSpD()
         if (Actual->BaseSpDef <100)
             cout << " ";
         cout << "    SPD: " << Actual->BaseSpeed << endl;
+        cout << endl;
+        cout << endl;
+        cout << "Please press enter to return to the previous menu." << endl;
     }
 
     else if (LorH == "H")
@@ -1859,6 +1889,9 @@ void PokemonEntris :: SearchSpD()
         if (Actual->BaseSpDef <100)
             cout << " ";
         cout << "    SPD: " << Actual->BaseSpeed << endl;
+        cout << endl;
+        cout << endl;
+        cout << "Please press enter to return to the previous menu." << endl;
     }
     cin.get();
     while (cin.get() != '\n')
@@ -2027,6 +2060,9 @@ void PokemonEntris :: SearchSPD()
         if (Actual->BaseSpDef <100)
             cout << " ";
         cout << "    SPD: " << Actual->BaseSpeed << endl;
+        cout << endl;
+        cout << endl;
+        cout << "Please press enter to return to the previous menu." << endl;
     }
 
     else if (LorH == "H")
@@ -2080,6 +2116,9 @@ void PokemonEntris :: SearchSPD()
         if (Actual->BaseSpDef <100)
             cout << " ";
         cout << "    SPD: " << Actual->BaseSpeed << endl;
+        cout << endl;
+        cout << endl;
+        cout << "Please press enter to return to the previous menu." << endl;
     }
     cin.get();
     while (cin.get() != '\n')
@@ -2182,21 +2221,34 @@ void PokemonEntris::Breedable()
             Actual -> Name == "Ditto" || Actual2 -> Name == "Ditto")
         {
             cout << Actual -> Name << " can breed with " << Actual2 -> Name << "." << endl;
+            cout << endl;
+            cout << endl;
+            cout << "Please press enter to return to the previous menu." << endl;
         }
         else
         {
             cout << Actual -> Name << " cannot breed with " << Actual2 -> Name << "." << endl;
+            cout << endl;
+            cout << endl;
+            cout << "Please press enter to return to the previous menu." << endl;
         }
     }
     else if (Actual -> eggGroup1 == " Undiscovered" || Actual -> eggGroup2 == " Undiscovered" ||
         Actual2 -> eggGroup1 == " Undiscovered" || Actual2 -> eggGroup2 == " Undiscovered")
     {
         cout << Actual -> Name << " cannot breed with " << Actual2 -> Name << "." << endl;
+        cout << endl;
+        cout << endl;
+        cout << "Please press enter to return to the previous menu." << endl;
+
     }
     else if (Actual -> eggGroup1 == " Ditto" || Actual -> eggGroup2 == " Ditto" ||
         Actual2 -> eggGroup1 == " Ditto" || Actual2 -> eggGroup2 == " Ditto")
     {
         cout << Actual -> Name << " can breed with " << Actual2 -> Name << "." << endl;
+                    cout << endl;
+            cout << endl;
+            cout << "Please press enter to return to the previous menu." << endl;
     }
     else
     {
@@ -2204,9 +2256,15 @@ void PokemonEntris::Breedable()
                 Actual -> eggGroup2 == Actual2 -> eggGroup1 || Actual -> eggGroup2 == Actual2 -> eggGroup2)
         {
             cout << Actual -> Name << " can breed with " << Actual2 -> Name << "." << endl;
+                        cout << endl;
+            cout << endl;
+            cout << "Please press enter to return to the previous menu." << endl;
         }
         else
             cout << Actual -> Name << " cannot breed with " << Actual2 -> Name << "." << endl;
+                    cout << endl;
+            cout << endl;
+            cout << "Please press enter to return to the previous menu." << endl;
     }
     //cin.get();
     while (cin.get() != '\n')
@@ -2370,6 +2428,9 @@ void PokemonEntris :: SearchByHeight()
 
         cout << " Gender: " << Actual->malePercent << "% Male    and    " << Actual->femalePercent << "% Female\n";
         cout << Actual->DescriptionText << endl;
+                    cout << endl;
+            cout << endl;
+            cout << "Please press enter to return to the previous menu." << endl;
     }
 
     else if (LorH == "H")
@@ -2418,6 +2479,9 @@ void PokemonEntris :: SearchByHeight()
 
         cout << " Gender: " << Actual->malePercent << "% Male    and    " << Actual->femalePercent << "% Female\n";
         cout << Actual->DescriptionText << endl;
+                    cout << endl;
+            cout << endl;
+            cout << "Please press enter to return to the previous menu." << endl;
     }
     cin.get();
     while (cin.get() != '\n')
@@ -2581,6 +2645,9 @@ void PokemonEntris :: SearchByWeight()
 
         cout << " Gender: " << Actual->malePercent << "% Male    and    " << Actual->femalePercent << "% Female\n";
         cout << Actual->DescriptionText << endl;
+                    cout << endl;
+            cout << endl;
+            cout << "Please press enter to return to the previous menu." << endl;
     }
 
     else if (LorH == "H")
@@ -2629,6 +2696,9 @@ void PokemonEntris :: SearchByWeight()
 
         cout << " Gender: " << Actual->malePercent << "% Male    and    " << Actual->femalePercent << "% Female\n";
         cout << Actual->DescriptionText << endl;
+                    cout << endl;
+            cout << endl;
+            cout << "Please press enter to return to the previous menu." << endl;
     }
     //cin.get();
     while (cin.get() != '\n')
@@ -2712,6 +2782,9 @@ void PokemonEntris::SearchByNNGeneral()
 
     cout << " Gender: " << Actual->malePercent << "% Male    and    " << Actual->femalePercent << "% Female\n";
     cout << Actual->DescriptionText << endl;
+                cout << endl;
+            cout << endl;
+            cout << "Please press enter to return to the previous menu." << endl;
     //cin.get();
     while (cin.get() != '\n')
     {
@@ -2797,6 +2870,9 @@ void PokemonEntris ::SearchByNNBattle()
     if (Actual->BaseSpDef <100)
         cout << " ";
     cout << "    SPD: " << Actual->BaseSpeed << endl;
+                cout << endl;
+            cout << endl;
+            cout << "Please press enter to return to the previous menu." << endl;
 
     //cin.get();
     while (cin.get() != '\n')
